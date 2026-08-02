@@ -1,0 +1,18 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.trustlogix.io/release-notes.md
+versioning:
+  scheme: uri-path
+  detail: v1 endpoints under /api/*; newer endpoints under /api/v2/* (e.g. /api/v2/monitoring_policies).
+  docs: https://docs.trustlogix.io/trustlogix-api-documentation.md
+release_cadence:
+  frequency: bi-weekly
+  notes: https://docs.trustlogix.io/release-notes.md
+deprecation:
+  policy_url: null
+  sunset_header: false
+  note: No formal deprecation policy or RFC 8594 Sunset/Deprecation header support documented.
+sla:
+  url: null
+status_page: null
+deprecated_operations: []

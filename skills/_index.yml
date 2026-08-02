@@ -1,0 +1,16 @@
+generated: '2026-07-21'
+method: generated
+source: https://docs.trustlogix.io/trustlogix-api-documentation.md
+note: >-
+  Skills are grounded in operations documented in the TrustLogix REST API
+  reference (GitBook). No machine-readable OpenAPI is published by the provider;
+  operationIds/paths are taken verbatim from the reference.
+skills:
+  - file: trustlogix-create-and-publish-access-policy.md
+    name: Create and publish a data access policy
+    api: https://docs.trustlogix.io/trustlogix-api-documentation.md
+    operations: [createAccessPolicy, getImpactedObject, getReviewAndPublishablePolicies, reviewPublishPolicy, publishPolicy, listAccessPolicies]
+  - file: trustlogix-tag-data-source-objects.md
+    name: Tag data source objects for tag-based governance
+    api: https://docs.trustlogix.io/trustlogix-api-documentation.md
+    operations: [createDataSourceTags, validateTags, createTagAssociation, getTagReferences, getTagAssociationObjectTypes]

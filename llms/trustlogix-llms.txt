@@ -1,0 +1,124 @@
+# TRUSTLOGIX
+
+## Trustlogix Documentation
+
+- [TrustLogix](https://docs.trustlogix.io/readme.md)
+- [Data Sources](https://docs.trustlogix.io/data-sources.md)
+- [Register Data Source](https://docs.trustlogix.io/data-sources/register-data-source.md)
+- [Snowflake](https://docs.trustlogix.io/data-sources/snowflake.md)
+- [How To Locate Snowflake Account Identifier](https://docs.trustlogix.io/data-sources/snowflake/how-to-locate-snowflake-account-identifier.md)
+- [Key Pair Authentication Setup](https://docs.trustlogix.io/data-sources/snowflake/key-pair-authentication-setup.md)
+- [Snowflake with External OAuth Setup](https://docs.trustlogix.io/data-sources/snowflake/snowflake-with-external-oauth-setup.md)
+- [Databricks](https://docs.trustlogix.io/data-sources/databricks.md)
+- [SQL Server](https://docs.trustlogix.io/data-sources/sql-server.md)
+- [Power BI](https://docs.trustlogix.io/data-sources/power-bi.md)
+- [Pre-requisites for Power BI Registration](https://docs.trustlogix.io/data-sources/power-bi/pre-requisites-for-power-bi-registration.md)
+- [Best Practices and Known Issues](https://docs.trustlogix.io/data-sources/power-bi/best-practices-and-known-issues.md): XMLA Restrictions Semantic Model/Report and Policy Lifecycle Management
+- [Trust DSPM](https://docs.trustlogix.io/trust-dspm.md)
+- [Monitoring Policies](https://docs.trustlogix.io/trust-dspm/monitoring-policies.md)
+- [Activity and Compliance Reports](https://docs.trustlogix.io/trust-dspm/activity-and-compliance-reports.md)
+- [Data Sprawl](https://docs.trustlogix.io/trust-dspm/data-sprawl.md)
+- [Access Analyzer](https://docs.trustlogix.io/trust-dspm/access-analyzer.md)
+- [Snowflake Trust Center Scanner Package](https://docs.trustlogix.io/trust-dspm/snowflake-trust-center-scanner-package.md): This page contains the documentation related to the Trust Center Native App policies
+- [Trust AI](https://docs.trustlogix.io/trust-ai.md)
+- [MCP Gateway and AI Agent Setup](https://docs.trustlogix.io/trust-ai/mcp-gateway-and-ai-agent-setup.md)
+- [AI Agents](https://docs.trustlogix.io/trust-ai/ai-agents.md)
+- [Register an AI Agent](https://docs.trustlogix.io/trust-ai/ai-agents/register-an-ai-agent.md): Registering and connecting AI Agents to TrustLogix
+- [Resources](https://docs.trustlogix.io/trust-ai/ai-agents/resources.md): Data that AI Agents and Applications can access are defined as "resources".
+- [Access Policies](https://docs.trustlogix.io/trust-ai/ai-agents/access-policies.md): Access policies for AI Agents are created on "resources"
+- [MCP Server](https://docs.trustlogix.io/trust-ai/mcp-server.md): Connecting to TrustAI MCP Server
+- [ChatGPT](https://docs.trustlogix.io/trust-ai/mcp-server/chatgpt.md): ChatGPT Custom Apps
+- [Claude Desktop](https://docs.trustlogix.io/trust-ai/mcp-server/claude-desktop.md): Claude Connectors
+- [Databricks](https://docs.trustlogix.io/trust-ai/mcp-server/databricks.md): Connect Databricks Agents to Trustlogix
+- [Guardian Agent](https://docs.trustlogix.io/trust-ai/guardian-agent.md)
+- [Trust Access](https://docs.trustlogix.io/trust-access.md)
+- [Data Access Governance](https://docs.trustlogix.io/trust-access/data-access-governance.md)
+- [Object Access Policies](https://docs.trustlogix.io/trust-access/data-access-governance/object-access-policies.md)
+- [Privilege Template Policies](https://docs.trustlogix.io/trust-access/data-access-governance/object-access-policies/privilege-template-policies.md)
+- [Tag Based Policies](https://docs.trustlogix.io/trust-access/data-access-governance/object-access-policies/tag-based-policies.md)
+- [Database and Schema level Policies](https://docs.trustlogix.io/trust-access/data-access-governance/object-access-policies/database-and-schema-level-policies.md)
+- [Attribute Based Access Policies](https://docs.trustlogix.io/trust-access/data-access-governance/attribute-based-access-policies.md)
+- [Row Access Policies](https://docs.trustlogix.io/trust-access/data-access-governance/attribute-based-access-policies/row-access-policies.md)
+- [Masking Policies](https://docs.trustlogix.io/trust-access/data-access-governance/attribute-based-access-policies/masking-policies.md)
+- [Using the Dimension Table to build ABAC policy conditions](https://docs.trustlogix.io/trust-access/data-access-governance/attribute-based-access-policies/using-the-dimension-table-to-build-abac-policy-conditions.md)
+- [Domain Policies](https://docs.trustlogix.io/trust-access/data-access-governance/domain-policies.md)
+- [TrustLogix Policy Synchronization](https://docs.trustlogix.io/trust-access/data-access-governance/trustlogix-policy-synchronization.md)
+- [Access Policy Migration Status Flow](https://docs.trustlogix.io/trust-access/data-access-governance/access-policy-migration-status-flow.md): This document outlines the standard procedural flow, platform prerequisites, and lifecycle of access policies as they are migrated across different data environments(e.g., from Development to Product)
+- [Application Access Governance(Preview)](https://docs.trustlogix.io/trust-access/application-access-governance-preview.md)
+- [Register An Application](https://docs.trustlogix.io/trust-access/application-access-governance-preview/register-an-application.md)
+- [Resources](https://docs.trustlogix.io/trust-access/application-access-governance-preview/resources.md)
+- [Attributes](https://docs.trustlogix.io/trust-access/application-access-governance-preview/attributes.md)
+- [Access Policies](https://docs.trustlogix.io/trust-access/application-access-governance-preview/access-policies.md)
+- [Tag Management](https://docs.trustlogix.io/tag-management.md)
+- [Attribute Management](https://docs.trustlogix.io/attribute-management.md)
+- [Attribute Management](https://docs.trustlogix.io/attribute-management/attribute-management.md)
+- [Attribute Value Management](https://docs.trustlogix.io/attribute-management/attribute-value-management.md)
+- [Attributes based on Source](https://docs.trustlogix.io/attribute-management/attributes-based-on-source.md)
+- [Importing User Attributes and Group Membership from Microsoft Entra ID (Azure AD)](https://docs.trustlogix.io/attribute-management/importing-user-attributes-and-group-membership-from-microsoft-entra-id-azure-ad.md)
+- [Data Domains](https://docs.trustlogix.io/data-domains.md)
+- [Data Products](https://docs.trustlogix.io/data-domains/data-products.md)
+- [Attribute Management](https://docs.trustlogix.io/data-domains/attribute-management.md)
+- [Template Policies](https://docs.trustlogix.io/data-domains/template-policies.md)
+- [Administration](https://docs.trustlogix.io/administration.md)
+- [Users](https://docs.trustlogix.io/administration/users.md)
+- [Delegated Administration](https://docs.trustlogix.io/administration/users/delegated-administration.md)
+- [Configurations](https://docs.trustlogix.io/configurations.md)
+- [Tenant Settings](https://docs.trustlogix.io/configurations/tenant-settings.md)
+- [Templates](https://docs.trustlogix.io/configurations/templates.md)
+- [Understanding Future Schema Grants and Permission Gaps](https://docs.trustlogix.io/configurations/templates/understanding-future-schema-grants-and-permission-gaps.md)
+- [User-Defined Function](https://docs.trustlogix.io/configurations/user-defined-function.md): Using Functions in Access Policy Condition Builder
+- [Integrations](https://docs.trustlogix.io/integrations.md)
+- [Attribute Source Connection](https://docs.trustlogix.io/integrations/attribute-source-connection.md)
+- [Azure AD or MS Entra Graph Endpoint](https://docs.trustlogix.io/integrations/attribute-source-connection/azure-ad-or-ms-entra-graph-endpoint.md)
+- [Single Sign On](https://docs.trustlogix.io/integrations/single-sign-on.md)
+- [Azure Active Directory (MS Entra)](https://docs.trustlogix.io/integrations/single-sign-on/azure-active-directory-ms-entra.md)
+- [User Provisioning from Azure AD](https://docs.trustlogix.io/integrations/single-sign-on/azure-active-directory-ms-entra/user-provisioning-from-azure-ad.md)
+- [User Deprovisioning from Azure AD](https://docs.trustlogix.io/integrations/single-sign-on/azure-active-directory-ms-entra/user-deprovisioning-from-azure-ad.md)
+- [Okta](https://docs.trustlogix.io/integrations/single-sign-on/okta.md)
+- [User Provisioning from Okta](https://docs.trustlogix.io/integrations/single-sign-on/okta/user-provisioning-from-okta.md)
+- [User Deprovisioning from Okta](https://docs.trustlogix.io/integrations/single-sign-on/okta/user-deprovisioning-from-okta.md)
+- [Generate SCIM token](https://docs.trustlogix.io/integrations/single-sign-on/generate-scim-token.md): This document explains how to regenerate an existing SCIM token, validate it in the user provisioning application, and update it in both the external application and the TrustLogix console.
+- [Collaboration Tool](https://docs.trustlogix.io/integrations/collaboration-tool.md)
+- [Email](https://docs.trustlogix.io/integrations/collaboration-tool/email.md)
+- [Slack](https://docs.trustlogix.io/integrations/collaboration-tool/slack.md)
+- [Release Notes](https://docs.trustlogix.io/release-notes.md): TrustLogix releases new versions bi-weekly. These releases include both the feature additions as well as the product bug fixes.
+- [2026 Q2 Releases](https://docs.trustlogix.io/release-notes/2026-q2-releases.md)
+- [June 2026](https://docs.trustlogix.io/release-notes/2026-q2-releases/june-2026.md)
+- [May 2026](https://docs.trustlogix.io/release-notes/2026-q2-releases/may-2026.md)
+- [April 2026](https://docs.trustlogix.io/release-notes/2026-q2-releases/april-2026.md)
+- [2026 Q1 Releases](https://docs.trustlogix.io/release-notes/2026-q1-releases.md)
+- [Mar 2026](https://docs.trustlogix.io/release-notes/2026-q1-releases/mar-2026.md)
+- [Feb 2026](https://docs.trustlogix.io/release-notes/2026-q1-releases/feb-2026.md)
+- [Jan 2026](https://docs.trustlogix.io/release-notes/2026-q1-releases/jan-2026.md)
+- [2025 Q4 Releases](https://docs.trustlogix.io/release-notes/2025-q4-releases.md)
+- [Dec 2025](https://docs.trustlogix.io/release-notes/2025-q4-releases/dec-2025.md)
+- [Nov 2025](https://docs.trustlogix.io/release-notes/2025-q4-releases/nov-2025.md)
+- [Oct 2025](https://docs.trustlogix.io/release-notes/2025-q4-releases/oct-2025.md)
+- [2025 Q3 Releases](https://docs.trustlogix.io/release-notes/2025-q3-releases.md)
+- [Sept 2025](https://docs.trustlogix.io/release-notes/2025-q3-releases/sept-2025.md)
+- [Aug 2025](https://docs.trustlogix.io/release-notes/2025-q3-releases/aug-2025.md)
+- [July 2025](https://docs.trustlogix.io/release-notes/2025-q3-releases/july-2025.md)
+- [2025 Q2 Releases](https://docs.trustlogix.io/release-notes/2025-q2-releases.md)
+- [June 2025](https://docs.trustlogix.io/release-notes/2025-q2-releases/june-2025.md)
+- [May 2025](https://docs.trustlogix.io/release-notes/2025-q2-releases/may-2025.md)
+- [April 2025](https://docs.trustlogix.io/release-notes/2025-q2-releases/april-2025.md)
+- [2025 Q1 Releases](https://docs.trustlogix.io/release-notes/2025-q1-releases.md)
+- [March 2025](https://docs.trustlogix.io/release-notes/2025-q1-releases/march-2025.md)
+- [January 2025](https://docs.trustlogix.io/release-notes/2025-q1-releases/january-2025.md)
+- [TrustLogix API Documentation](https://docs.trustlogix.io/trustlogix-api-documentation.md)
+
+
+---
+
+# Agent Instructions
+This documentation is published with GitBook. GitBook is the documentation platform designed so that both humans and AI agents can read, navigate, and reason over technical content effectively. Learn more at gitbook.com.
+
+## Querying This Documentation
+If you need additional information, you can query the documentation dynamically by asking a question.
+Perform an HTTP GET request on a page URL with the `ask` query parameter:
+```
+GET https://docs.trustlogix.io/readme.md?ask=<question>
+```
+The question should be specific, self-contained, and written in natural language.
+The response will contain a direct answer to the question and relevant excerpts and sources from the documentation.
+Use this mechanism when the answer is not explicitly present in the current page, you need clarification or additional context, or you want to retrieve related documentation sections.

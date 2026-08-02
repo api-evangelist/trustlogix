@@ -1,0 +1,36 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.trustlogix.io/trustlogix-api-documentation.md
+description: >-
+  Cross-cutting standards the TrustLogix platform and API conform to, from the
+  published docs. Compliance posture (SOC 2) is asserted on the security pledge
+  page; product-side governance mappings (GDPR, SOC 2, NIST CSF, ISO 42001, EU AI
+  Act) are features of the Guardian Agent, not TrustLogix's own certifications.
+standards:
+  - id: oauth2
+    conforms: true
+    evidence: TrustAI MCP Server authorizes agents with OAuth 2.0 authorization-code flow.
+    source: https://docs.trustlogix.io/trust-ai/mcp-server.md
+  - id: rfc9728-protected-resource-metadata
+    conforms: true
+    evidence: TrustAI MCP Server implements RFC 9728 per the MCP Authentication Specification.
+    source: https://docs.trustlogix.io/trust-ai/mcp-server.md
+  - id: mcp
+    conforms: true
+    evidence: Published TrustAI MCP Server exposing the policy engine to registered agents.
+    source: https://docs.trustlogix.io/trust-ai/mcp-server.md
+  - id: openid-connect
+    conforms: true
+    evidence: Console SSO via Azure AD (MS Entra) and Okta (OIDC).
+    source: https://docs.trustlogix.io/integrations/single-sign-on.md
+  - id: scim2
+    conforms: true
+    evidence: SCIM 2.0 user provisioning/deprovisioning with regenerable SCIM token.
+    source: https://docs.trustlogix.io/integrations/single-sign-on/generate-scim-token.md
+  - id: soc2
+    conforms: true
+    evidence: SOC 2 referenced on the TrustLogix security pledge page.
+    source: https://www.trustlogix.io/security-pledge
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: API errors use a { code, data, message } envelope rather than application/problem+json.

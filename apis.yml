@@ -1,8 +1,18 @@
 aid: trustlogix
 name: Trustlogix
-description: 'Trustlogix is a company surfaced as a portfolio company of norwest-venture-partners and
-  added to the API Evangelist network as a stub for enrichment. Sector: unknown. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: >-
+  TrustLogix is a data security and access governance platform that unifies data
+  visibility, policy enforcement, and AI protection across cloud, on-premises, and
+  hybrid data systems. It continuously detects inappropriate access, enforces
+  least-privilege and attribute-based (ABAC) / role-based (RBAC) controls, and
+  governs how users, service accounts, and AI agents reach sensitive data across
+  platforms such as Snowflake, Databricks, Dremio, SQL Server, and Power BI. The
+  platform includes Trust DSPM (data security posture management), Trust Access
+  (data access governance with masking, row-access, and tag-based policies), and
+  Trust AI — an agentic layer whose Guardian Agent and TrustAI MCP Server broker
+  real-time policy decisions for registered AI agents. TrustLogix exposes a REST
+  API for accounts, access policies, tags, monitoring policies, and users, plus
+  SSO (Azure AD / Okta) with SCIM 2.0 provisioning.
 url: https://raw.githubusercontent.com/api-evangelist/trustlogix/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,13 +20,57 @@ x-backed-by:
 - norwest-venture-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
+image: https://cdn.prod.website-files.com/689aca9a00606d8ac05c62da/69004670671ad7cf11b7e5f3_TrustLogix-OpenGraph.jpg
 tags:
 - Company
-- Unknown
-apis: []
+- Data Security
+- Data Access Governance
+- Data Security Posture Management
+- Access Control
+- Snowflake
+- Databricks
+- AI Security
+- MCP
+- Authorization
+- Compliance
+apis:
+- name: TrustLogix REST API
+  description: >-
+    REST API for the TrustLogix platform — manage data source accounts, data
+    access policies (create / impact-preview / review / publish), data-source
+    tags and associations, monitoring policies (v1 and v2), users and user
+    attributes, and session login/logout. API-key auth via the Authorization
+    header with a tenantId header on tenant-scoped calls; offset pagination
+    (page_no/page_size/sort_by/sort_order); a { code, data, message } response
+    envelope.
+  humanURL: https://docs.trustlogix.io/trustlogix-api-documentation
+  baseURL: https://www.trustlogix.io
+  properties:
+  - type: APIReference
+    url: https://docs.trustlogix.io/trustlogix-api-documentation
+  - type: Documentation
+    url: https://docs.trustlogix.io
+  - type: Authentication
+    url: authentication/trustlogix-authentication.yml
+  - type: Conventions
+    url: conventions/trustlogix-conventions.yml
+  - type: ErrorCatalog
+    url: errors/trustlogix-problem-types.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -24,4 +78,53 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://trustlogix.io
+  url: https://www.trustlogix.io
+- type: Documentation
+  url: https://docs.trustlogix.io
+- type: APIReference
+  url: https://docs.trustlogix.io/trustlogix-api-documentation
+- type: GettingStarted
+  url: https://www.trustlogix.io/get-started
+- type: Blog
+  url: https://www.trustlogix.io/blogs
+- type: Pricing
+  url: https://www.trustlogix.io/pricing
+- type: SignUp
+  url: https://www.trustlogix.io/get-started
+- type: TermsOfService
+  url: https://www.trustlogix.io/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.trustlogix.io/privacy-policy
+- type: Support
+  url: https://www.trustlogix.io/contact
+- type: ChangeLog
+  url: https://docs.trustlogix.io/release-notes
+- type: ChangeLog
+  url: changelog/trustlogix-changelog.yml
+- type: Authentication
+  url: authentication/trustlogix-authentication.yml
+- type: Conventions
+  url: conventions/trustlogix-conventions.yml
+- type: ErrorCatalog
+  url: errors/trustlogix-problem-types.yml
+- type: Lifecycle
+  url: lifecycle/trustlogix-lifecycle.yml
+- type: MCPServer
+  url: mcp/trustlogix-mcp.yml
+- type: LLMsTxt
+  url: llms/trustlogix-llms.txt
+- type: Conformance
+  url: conformance/trustlogix-conformance.yml
+- type: Compliance
+  url: https://www.trustlogix.io/security-pledge
+- type: TrustCenter
+  url: security/trustlogix-trust-center.yml
+- type: DomainSecurity
+  url: security/trustlogix-domain-security.yml
+- type: AgentSkill
+  url: skills/_index.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 13
+  pass: local-v1

@@ -1,0 +1,13 @@
+generated: '2026-07-21'
+method: searched
+source: https://www.trustlogix.io/security-pledge
+url: https://www.trustlogix.io/security-pledge
+description: >-
+  TrustLogix publishes its security posture on the Security Pledge page, which
+  references SOC 2. No dedicated trust.trustlogix subdomain or bug-bounty program
+  was found.
+certifications:
+  - SOC 2
+evidence:
+  - source: https://www.trustlogix.io/security-pledge
+    keywords: [soc 2, security pledge]

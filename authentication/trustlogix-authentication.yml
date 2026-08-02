@@ -1,0 +1,46 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.trustlogix.io/trustlogix-api-documentation.md
+docs:
+  - https://docs.trustlogix.io/trustlogix-api-documentation.md
+  - https://docs.trustlogix.io/integrations/single-sign-on.md
+  - https://docs.trustlogix.io/trust-ai/mcp-server.md
+summary:
+  types: [apiKey, oauth2, openIdConnect]
+  api_key_in: [header]
+  oauth2_flows: [authorizationCode]
+schemes:
+  - name: ApiKeyAuth
+    type: apiKey
+    in: header
+    parameter_name: Authorization
+    description: >-
+      REST API requests authenticate with an API key passed in the Authorization
+      header. Most tenant-scoped endpoints additionally require a tenantId header.
+    applies_to: TrustLogix REST API (/api/*)
+    source: https://docs.trustlogix.io/trustlogix-api-documentation.md
+  - name: SessionLogin
+    type: http
+    scheme: custom
+    description: >-
+      POST /api/login exchanges loginId + password (+ optional TOTP for MFA) for a
+      session; POST /api/logout ends it.
+    source: https://docs.trustlogix.io/trustlogix-api-documentation.md
+  - name: MCP-OAuth2
+    type: oauth2
+    flow: authorizationCode
+    description: >-
+      The TrustAI MCP Server authorizes agent connections with OAuth 2.0,
+      implementing RFC 9728 Protected Resource Metadata per the MCP Authentication
+      Specification. End-user OAuth tokens are propagated in the Authorization
+      header to carry end-user identity to the policy engine.
+    standards: [RFC9728]
+    source: https://docs.trustlogix.io/trust-ai/mcp-server.md
+  - name: SSO-OIDC
+    type: openIdConnect
+    description: >-
+      Console/tenant single sign-on via Azure Active Directory (MS Entra) and Okta,
+      with SCIM 2.0 user provisioning/deprovisioning and a regenerable SCIM token.
+    identity_providers: [Azure AD / MS Entra, Okta]
+    provisioning: SCIM 2.0
+    source: https://docs.trustlogix.io/integrations/single-sign-on.md

@@ -1,0 +1,38 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.trustlogix.io/release-notes.md
+scheme: dated-monthly
+cadence: >-
+  TrustLogix releases new versions bi-weekly; release notes are published and
+  grouped by month and quarter. Feature additions and product bug fixes.
+current: June 2026
+docs: https://docs.trustlogix.io/release-notes.md
+entries:
+  - version: June 2026
+    date: '2026-06'
+    breaking: false
+    url: https://docs.trustlogix.io/release-notes/2026-q2-releases/june-2026.md
+    highlights:
+      - Guardian Agent overview and enhancements (multi-agent autonomous security layer)
+      - RBAC and ABAC support for Dremio (first-class data source)
+      - Privilege Reduction (removed account-admin requirement for Databricks service principals; manage-grant for Snowflake)
+      - Databricks Workspace Management
+      - RBAC Support for Databricks AI Apps
+      - Four new out-of-the-box risk detector rules (sensitive data exposure, excessive permissions, data exfiltration, compliance violations)
+  - version: May 2026
+    date: '2026-05'
+    url: https://docs.trustlogix.io/release-notes/2026-q2-releases/may-2026.md
+  - version: April 2026
+    date: '2026-04'
+    url: https://docs.trustlogix.io/release-notes/2026-q2-releases/april-2026.md
+archive:
+  - quarter: 2026 Q1
+    url: https://docs.trustlogix.io/release-notes/2026-q1-releases.md
+  - quarter: 2025 Q4
+    url: https://docs.trustlogix.io/release-notes/2025-q4-releases.md
+  - quarter: 2025 Q3
+    url: https://docs.trustlogix.io/release-notes/2025-q3-releases.md
+  - quarter: 2025 Q2
+    url: https://docs.trustlogix.io/release-notes/2025-q2-releases.md
+  - quarter: 2025 Q1
+    url: https://docs.trustlogix.io/release-notes/2025-q1-releases.md

@@ -1,0 +1,45 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.trustlogix.io/trustlogix-api-documentation.md
+description: >-
+  Cross-cutting request/response semantics for the TrustLogix REST API, captured
+  from the published API reference. Cross-links: authentication/, errors/,
+  lifecycle/.
+authentication:
+  style: api-key-header
+  header: Authorization
+  tenant_scoping:
+    header: tenantId
+    note: Most tenant-scoped endpoints require a tenantId header (some also accept accountId).
+pagination:
+  style: offset
+  params:
+    page_no: { type: integer, default: 1, description: Page number }
+    page_size: { type: integer, default: 20, description: Items per page (10 or 20 default depending on endpoint) }
+    sort_by: { type: string, default: lastModifiedDate, description: Field to sort by }
+    sort_order: { type: string, default: DESC, description: ASC or DESC }
+  response_fields: [items, pageNo, pageSize, total]
+response_envelope:
+  shape: '{ code, data, message }'
+  fields:
+    code: Numeric status/result code returned by the operation.
+    data: Operation payload (object or empty object).
+    message: Human-readable result message.
+  note: >-
+    Mutating operations and simple actions return the { code, data, message }
+    envelope; list operations return { items[], pageNo, pageSize, total }; some
+    reads return the resource object directly.
+content_types:
+  request: application/json
+  response: application/json
+versioning:
+  style: uri-path
+  detail: Newer resources are exposed under /api/v2/* (e.g. /api/v2/monitoring_policies) alongside the v1 /api/* surface.
+idempotency:
+  supported: false
+  note: No idempotency-key header or contract is documented in the API reference.
+rate_limit_signaling:
+  documented: false
+error_handling:
+  see: errors/trustlogix-problem-types.yml
+  common_statuses: [200, 201, 204, 401, 403, 404]

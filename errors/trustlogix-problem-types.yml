@@ -1,0 +1,31 @@
+generated: '2026-07-21'
+method: derived
+source: https://docs.trustlogix.io/trustlogix-api-documentation.md
+format: envelope
+description: >-
+  Derived from the documented response codes in the TrustLogix REST API reference.
+  Errors are returned with the standard { code, data, message } envelope rather
+  than RFC 9457 problem+json. The following HTTP statuses are documented across
+  the API surface.
+envelope:
+  shape: '{ code, data, message }'
+problems:
+  - status: 401
+    title: Unauthorized
+    meaning: Authentication failed (missing or invalid API key / session).
+    remediation: Supply a valid Authorization header (API key) and, where required, a tenantId header.
+  - status: 403
+    title: Forbidden
+    meaning: Insufficient permissions for the requested operation.
+    remediation: Ensure the authenticated principal has the required role/entitlement for the resource.
+  - status: 404
+    title: Not Found
+    meaning: The requested resource was not found, or no records matched the criteria.
+    remediation: Verify the accountId / resource id / filter parameters.
+success_codes:
+  - status: 200
+    title: OK
+  - status: 201
+    title: Created
+  - status: 204
+    title: No Content
