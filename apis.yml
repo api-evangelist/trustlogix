@@ -32,7 +32,7 @@ accessModel:
   - authentication
   generated: '2026-07-22'
   method: derived
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-21'
 image: https://cdn.prod.website-files.com/689aca9a00606d8ac05c62da/69004670671ad7cf11b7e5f3_TrustLogix-OpenGraph.jpg
