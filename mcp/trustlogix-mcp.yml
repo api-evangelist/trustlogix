@@ -7,31 +7,36 @@ server:
   vendor: TrustLogix
   transport: http
   url_pattern: https://{tlx-mcp-host}/tenants/{tenant-id}/agents/{agent-id}/mcp
-  description: >-
-    TrustLogix exposes the TrustAI Policy Engine to registered AI agents over the
-    Model Context Protocol. The MCP URL is custom per agent (scoped to tenant and
-    agent id). Securing a custom agent requires implementing an MCP client that
-    passes the end-user OAuth token in the Authorization header so end-user
-    identity is propagated at decision time and correlated with activity logs.
+  description: TrustLogix exposes the TrustAI Policy Engine to registered AI agents over the Model Context
+    Protocol. The MCP URL is custom per agent (scoped to tenant and agent id). Securing a custom agent
+    requires implementing an MCP client that passes the end-user OAuth token in the Authorization header
+    so end-user identity is propagated at decision time and correlated with activity logs.
   authorization:
     type: oauth2
     protected_resource_metadata: RFC9728
     mcp_auth_specification: https://modelcontextprotocol.io/specification/2025-11-25/basic/authorization
-    note: >-
-      When configuring OAuth for the MCP connection, use the same registered
-      application's OAuth details provided earlier to TrustLogix so the proper
-      agent identity is propagated.
+    note: When configuring OAuth for the MCP connection, use the same registered application's OAuth details
+      provided earlier to TrustLogix so the proper agent identity is propagated.
 clients_documented:
-  - name: ChatGPT
-    kind: Custom Apps / external MCP connection
-    docs: https://docs.trustlogix.io/trust-ai/mcp-server/chatgpt.md
-  - name: Claude Desktop
-    kind: Custom Connector
-    docs: https://docs.trustlogix.io/trust-ai/mcp-server/claude-desktop.md
-  - name: Databricks
-    kind: Databricks agents
-    docs: https://docs.trustlogix.io/trust-ai/mcp-server/databricks.md
+- name: ChatGPT
+  kind: Custom Apps / external MCP connection
+  docs: https://docs.trustlogix.io/trust-ai/mcp-server/chatgpt.md
+- name: Claude Desktop
+  kind: Custom Connector
+  docs: https://docs.trustlogix.io/trust-ai/mcp-server/claude-desktop.md
+- name: Databricks
+  kind: Databricks agents
+  docs: https://docs.trustlogix.io/trust-ai/mcp-server/databricks.md
 docs:
-  - https://docs.trustlogix.io/trust-ai/mcp-server.md
-  - https://docs.trustlogix.io/trust-ai/mcp-gateway-and-ai-agent-setup.md
-  - https://docs.trustlogix.io/trust-ai/ai-agents/register-an-ai-agent.md
+- https://docs.trustlogix.io/trust-ai/mcp-server.md
+- https://docs.trustlogix.io/trust-ai/mcp-gateway-and-ai-agent-setup.md
+- https://docs.trustlogix.io/trust-ai/ai-agents/register-an-ai-agent.md
+deployment:
+  mode: none
+  endpoint: https://{tlx-mcp-host}/tenants/{tenant-id}/agents/{agent-id}/mcp
+  verified: probed
+  probe: dead
+  note: the endpoint this manifest claimed did not answer; recorded as none rather than deleted so the
+    claim stays auditable
+  checked: '2026-08-12'
+  source: catalog MCP census
