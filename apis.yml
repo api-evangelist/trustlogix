@@ -70,7 +70,6 @@ apis:
     (page_no/page_size/sort_by/sort_order); a { code, data, message } response
     envelope.
   humanURL: https://docs.trustlogix.io/trustlogix-api-documentation
-  baseURL: https://www.trustlogix.io
   properties:
   - type: APIReference
     url: https://docs.trustlogix.io/trustlogix-api-documentation
