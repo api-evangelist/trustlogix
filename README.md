@@ -64,6 +64,102 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Trustlogix is a company surfaced as a portfolio company of norwest-venture-partners and added to the API Evangelist network as a stub for enrichment. Sector: unknown. This profile is a lead awaiting the enrichment pipeline.
+TrustLogix is a data security and access governance platform that unifies data visibility, policy enforcement, and AI protection across cloud, on-premises, and hybrid data systems. It continuously detects inappropriate access, enforces least-privilege and attribute-based (ABAC) / role-based (RBAC) controls, and governs how users, service accounts, and AI agents reach sensitive data across platforms such as Snowflake, Databricks, Dremio, SQL Server, and Power BI. The platform includes Trust DSPM (data security posture management), Trust Access (data access governance with masking, row-access, and tag-based policies), and Trust AI — an agentic layer whose Guardian Agent and TrustAI MCP Server broker real-time policy decisions for registered AI agents. TrustLogix exposes a REST API for accounts, access policies, tags, monitoring policies, and users, plus SSO (Azure AD / Okta) with SCIM 2.0 provisioning.
 
-Backed by: norwest-venture-partners — https://trustlogix.io
+**Areas:** Company · Data Security · Data Access Governance · Data Security Posture Management · Access Control · Snowflake · Databricks · AI Security · MCP · Authorization · Compliance
+
+## Trustlogix on APIs.io
+
+Everything profiled for Trustlogix is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/trustlogix/](https://apis.io/providers/trustlogix/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [TrustLogix REST API](https://apis.io/apis/trustlogix/trustlogix-rest-api/) — REST API for the TrustLogix platform — manage data source accounts, data access policies (create / impact-preview / review / publish), data-source tags and…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [TrustAI MCP Server](https://apis.io/servers/trustlogix/trustai-mcp-server/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Trustlogix Authentication](https://apis.io/security/trustlogix/trustlogix-authentication/)
+- [Trustlogix Domain Security](https://apis.io/security/trustlogix/trustlogix-domain-security/)
+- [Trustlogix Trust Center](https://apis.io/security/trustlogix/trustlogix-trust-center/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.trustlogix.io)
+- [Documentation](https://docs.trustlogix.io)
+- [Getting started](https://www.trustlogix.io/get-started)
+- [API reference](https://docs.trustlogix.io/trustlogix-api-documentation)
+- [Pricing](https://www.trustlogix.io/pricing)
+- [Sign up](https://www.trustlogix.io/get-started)
+- [Support](https://www.trustlogix.io/contact)
+- [Changelog](https://docs.trustlogix.io/release-notes)
+- [Blog](https://www.trustlogix.io/blogs)
+- [Compliance](https://www.trustlogix.io/security-pledge)
+- [Terms of service](https://www.trustlogix.io/terms-of-service)
+- [Privacy policy](https://www.trustlogix.io/privacy-policy)
+
+## API Evangelist rating
+
+**Kin Score 34.8** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 64.3 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 15.8 |
+| Developer ergonomics | 49.4 |
+| Access clarity | 60.5 |
+
+**Agent readiness 4.1** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | derived (partial credit) |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | derived (partial credit) |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 29.4** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/trustlogix/](https://apis.io/providers/trustlogix/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Trustlogix: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/trustlogix/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
